@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Clases Particulares de Matemática en Buenos Aires | Profesor Particular</title>
+    <meta name="description" content="Clases particulares de matemática en Buenos Aires. Profesor experimentado para primaria, secundaria y CBC. Mejorá tus notas con clases personalizadas. ¡Contactanos ahora!">
+    <meta name="keywords" content="clases particulares matemática, profesor matemática Buenos Aires, apoyo escolar matemática, clases CBC matemática, profesor particular matemática">
+    <meta name="author" content="Clases Particulares Matemática BA">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Clases Particulares de Matemática en Buenos Aires">
+    <meta property="og:description" content="Profesor experimentado ofrece clases particulares de matemática. Mejorá tus notas con clases personalizadas en Buenos Aires.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_AR">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Clases Particulares de Matemática Buenos Aires",
+        "description": "Clases particulares de matemática para todos los niveles en Buenos Aires",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Buenos Aires",
+            "addressCountry": "AR"
+        },
+        "telephone": "+54-11-XXXX-XXXX",
+        "serviceArea": "Buenos Aires",
+        "priceRange": "$$"
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📐</text></svg>">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #f59e0b;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+            --success-color: #10b981;
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background: var(--white);
+            box-shadow: var(--shadow);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+        
+        .cta-button {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .cta-button:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.3);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            color: var(--white);
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 20s infinite linear;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-100px); }
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .whatsapp-button {
+            background: #25d366;
+            color: var(--white);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+        }
+        
+        .whatsapp-button:hover {
+            background: #128c7e;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
+        }
+        
+        /* Features Section */
+        .features {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .section-title p {
+            font-size: 1.125rem;
+            color: var(--text-light);
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: var(--white);
+            border: 2px solid var(--bg-light);
+            border-radius: 16px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .service-card:hover {
+            border-color: var(--primary-color);
+            box-shadow: 0 20px 40px rgba(37, 99, 235, 0.1);
+        }
+        
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+        
+        /* Contact Form */
+        .contact {
+            padding: 80px 0;
+            background: var(--bg-light);
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        
+        .contact-info {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+        
+        .contact-form {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--bg-light);
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+        }
+        
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .testimonial-card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--accent-color);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+        
+        /* Fixed WhatsApp Button */
+        .whatsapp-fixed {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--text-dark);
+            color: var(--white);
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .hero-buttons .cta-button,
+            .hero-buttons .whatsapp-button {
+                width: 100%;
+                max-width: 300px;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+        
+        /* Success Message */
+        .success-message {
+            background: var(--success-color);
+            color: var(--white);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            display: none;
+        }
+        
+        /* Loading Spinner */
+        .loading {
+            display: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid transparent;
+            border-top: 2px solid var(--white);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 0.5rem;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">📐 MathTutor BA</a>
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <a href="#contacto" class="cta-button">Solicitar Clase</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Clases Particulares de Matemática</h1>
+                <p>En Buenos Aires • Presencial y Online • Para todos los niveles</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="cta-button">Solicitar Información</a>
+                    <a href="https://wa.me/5411XXXXXXXX?text=Hola%2C%20me%20interesa%20información%20sobre%20las%20clases%20de%20matemática" class="whatsapp-button" target="_blank">
+                        📱 WhatsApp Directo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>¿Por qué elegir nuestras clases?</h2>
+                <p>Metodología personalizada para que apruebes y comprendas matemática de verdad</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3>Profesor Experimentado</h3>
+                    <p>Más de 5 años enseñando matemática a estudiantes de primaria, secundaria y CBC en Buenos Aires.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📍</div>
+                    <h3>En Buenos Aires</h3>
+                    <p>Clases presenciales en tu domicilio o en mi consultorio. También disponible modalidad online.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⏰</div>
+                    <h3>Horarios Flexibles</h3>
+                    <p>Adaptamos los horarios a tu disponibilidad. Clases de lunes a sábado, mañana, tarde y noche.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Resultados Garantizados</h3>
+                    <p>Metodología probada que ha ayudado a cientos de estudiantes a mejorar sus notas.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Precios Accesibles</h3>
+                    <p>Tarifas competitivas con descuentos por paquetes de clases. Primera clase de prueba gratuita.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Clases Personalizadas</h3>
+                    <p>Adaptamos el contenido y el ritmo según tus necesidades específicas y nivel actual.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nuestros Servicios</h2>
+                <p>Cobertura completa para todos los niveles educativos</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>🎒 Matemática Primaria</h3>
+                    <p>Bases sólidas en aritmética, geometría y resolución de problemas. Apoyo escolar personalizado.</p>
+                    <ul>
+                        <li>Operaciones básicas</li>
+                        <li>Fracciones y decimales</li>
+                        <li>Geometría básica</li>
+                        <li>Problemas de aplicación</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>📚 Matemática Secundaria</h3>
+                    <p>Álgebra, geometría, trigonometría y más. Preparación para exámenes y apoyo durante todo el año.</p>
+                    <ul>
+                        <li>Álgebra y ecuaciones</li>
+                        <li>Funciones y gráficas</li>
+                        <li>Trigonometría</li>
+                        <li>Probabilidad y estadística</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>🎓 CBC - Matemática</h3>
+                    <p>Preparación específica para el Ciclo Básico Común (CBC) de la UBA. Análisis matemático y álgebra.</p>
+                    <ul>
+                        <li>Análisis Matemático I</li>
+                        <li>Álgebra y Geometría Analítica</li>
+                        <li>Preparación de parciales</li>
+                        <li>Recuperatorios</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3>📋 Preparación de Exámenes</h3>
+                    <p>Preparación intensiva para exámenes finales, recuperatorios e ingresos universitarios.</p>
+                    <ul>
+                        <li>Exámenes finales</li>
+                        <li>Recuperatorios</li>
+                        <li>Ingresos universitarios</li>
+                        <li>Simulacros de examen</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Lo que dicen nuestros estudiantes</h2>
+                <p>Testimonios reales de estudiantes que mejoraron sus notas</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Gracias a las clases particulares logré aprobar matemática en el CBC. El profesor es muy paciente y explica súper bien."
+                    </div>
+                    <div class="testimonial-author">- María, estudiante CBC UBA</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Mi hijo mejoró muchísimo sus notas en matemática. Ahora entiende los conceptos y disfruta de la materia."
+                    </div>
+                    <div class="testimonial-author">- Carlos, padre de estudiante secundario</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Excelente metodología y muy buenos resultados. Recomiendo 100% estas clases particulares."
+                    </div>
+                    <div class="testimonial-author">- Ana, estudiante secundaria</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contactanos</h2>
+                <p>Primera clase gratuita • Respuesta en menos de 24 horas</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <div style="margin: 2rem 0;">
+                        <p><strong>📍 Ubicación:</strong> Buenos Aires, Argentina</p>
+                        <p><strong>📱 WhatsApp:</strong> +54 11 XXXX-XXXX</p>
+                        <p><strong>📧 Email:</strong> info@mathtutorba.com</p>
+                        <p><strong>⏰ Horarios:</strong> Lunes a Sábado, 8:00 - 22:00</p>
+                    </div>
+                    
+                    <h4>Modalidades de Clase:</h4>
+                    <ul style="margin: 1rem 0;">
+                        <li>✅ Presencial en tu domicilio</li>
+                        <li>✅ Presencial en mi consultorio</li>
+                        <li>✅ Online por videollamada</li>
+                    </ul>
+                    
+                    <h4>Zonas de Cobertura:</h4>
+                    <p>Palermo, Belgrano, Villa Crespo, Caballito, Almagro, Flores, y zonas aledañas.</p>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="success-message" id="successMessage">
+                        ¡Mensaje enviado correctamente! Te contactaremos pronto.
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefono">Teléfono/WhatsApp *</label>
+                        <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="nivel">Nivel educativo *</label>
+                        <select id="nivel" name="nivel" required>
+                            <option value="">Selecciona tu nivel</option>
+                            <option value="primaria">Primaria</option>
+                            <option value="secundaria">Secundaria</option>
+                            <option value="cbc">CBC</option>
+                            <option value="universitario">Universitario</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="modalidad">Modalidad preferida *</label>
+                        <select id="modalidad" name="modalidad" required>
+                            <option value="">Selecciona modalidad</option>
+                            <option value="presencial-domicilio">Presencial en mi domicilio</option>
+                            <option value="presencial-consultorio">Presencial en consultorio</option>
+                            <option value="online">Online</option>
+                            <option value="ambas">Ambas modalidades</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="zona">Zona/Barrio (si es presencial)</label>
+                        <input type="text" id="zona" name="zona" placeholder="Ej: Palermo, Belgrano, etc.">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje adicional</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Contanos sobre tus necesidades específicas, horarios preferidos, etc."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="cta-button" style="width: 100%;">
+                        Enviar Consulta
+                        <span class="loading" id="loadingSpinner"></span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MathTutor BA</h3>
+                    <p>Clases particulares de matemática en Buenos Aires. Mejorá tus notas con un profesor experimentado.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="#servicios">Matemática Primaria</a></li>
+                        <li><a href="#servicios">Matemática Secundaria</a></li>
+                        <li><a href="#servicios">CBC Matemática</a></li>
+                        <li><a href="#servicios">Preparación Exámenes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li>📱 +54 11 XXXX-XXXX</li>
+                        <li>📧 info@mathtutorba.com</li>
+                        <li>📍 Buenos Aires, Argentina</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top: 1px solid #374151; padding-top: 20px;">
+                <p>&copy; 2025 MathTutor BA. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed WhatsApp Button -->
+    <a href="https://wa.me/5411XXXXXXXX?text=Hola%2C%20me%20interesa%20información%20sobre%20las%20clases%20de%20matemática" class="whatsapp-button whatsapp-fixed" target="_blank">
+        📱
+    </a>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitButton = this.querySelector('button[type="submit"]');
+            const loadingSpinner = document.getElementById('loadingSpinner');
+            const successMessage = document.getElementById('successMessage');
+            
+            // Show loading state
+            submitButton.disabled = true;
+            loadingSpinner.style.display = 'inline-block';
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = {};
+            formData.forEach((value, key) => {
+                data[key]
